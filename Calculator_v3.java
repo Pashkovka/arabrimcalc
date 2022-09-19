@@ -1,7 +1,8 @@
+import java.io.IOException;
 import java.util.Scanner;
 public class Calculator_v3 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         CalculatorClass Ciklversion = new CalculatorClass();
 
         Scanner in = new Scanner(System.in);
@@ -10,7 +11,23 @@ public class Calculator_v3 {
         num = num.replaceAll("\\s+",""); //удаляет пробелы из строки
         char [] charArraySr = num.toCharArray();//записывает в массив каждый символ
         String [] strings = num.split("[+-/*]");//метод разделяет строку [] - помещаются знаки выражения
-        String firstel = strings[0];//для теста условия помещаем переменную первого значения выражения
+ //       String firstel = strings[0];//для теста условия помещаем переменную первого значения выражения
+ //       System.out.println(String.valueOf(strings.length));
+        int bolshe = strings.length;
+        if(bolshe>2){
+            try {
+                throw new IOException(); // другой метод
+            } catch (IOException e) {
+                System.out.println("throws Exception //т.к. формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
+                System.exit(0);
+            }};
+        if(bolshe==1){
+            try {
+                throw new IOException(); // другой метод
+            } catch (IOException e) {
+                System.out.println("throws Exception //т.к. строка не является математической операцией");
+                System.exit(0);
+            }};
         String Srtr = "";
 
         for(int i = 0; i < charArraySr.length;i++){
