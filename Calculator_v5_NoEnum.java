@@ -36,9 +36,9 @@ public class Calculator_v5_NoEnum {
         for(int y = 0; y < charArraySr1.length;y++){
             Srtr1 = String.valueOf(charArraySr1[y]);
 //            System.out.println(Srtr);
-            if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")||Srtr1.equals("L")){
+            if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")||Srtr1.equals("L")||Srtr1.equals("C")){
             }};
-        if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")||Srtr1.equals("L")){
+        if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")||Srtr1.equals("L")||Srtr1.equals("C")){
             //           System.out.println("Первое римское");
             opredelitel +=2;
         }
@@ -54,9 +54,9 @@ public class Calculator_v5_NoEnum {
         for(int z = 0; z < charArraySr2.length;z++){
             Srtr2 = String.valueOf(charArraySr2[z]);
 //            System.out.println(Srtr2);
-            if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")||Srtr2.equals("L")){
+            if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")||Srtr2.equals("L")||Srtr2.equals("C")){
             }};
-        if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")||Srtr2.equals("L")){
+        if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")||Srtr2.equals("L")||Srtr2.equals("C")){
             //           System.out.println("Второе римское");
             opredelitel +=2;
         }
