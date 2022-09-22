@@ -21,6 +21,64 @@ public class Calculator_v4 {
         String [] strings = example.split("[+-/*]");//метод разделяет строку [] - помещаются знаки выражения
         //       String firstel = strings[0];//для теста условия помещаем переменную первого значения выражения
         //       System.out.println(String.valueOf(strings.length));
+
+
+
+
+
+
+        int opredelitel = 0;
+
+        String first = strings[0];
+        char [] charArraySr1 = first.toCharArray();
+        String Srtr1 = "";
+        for(int y = 0; y < charArraySr1.length;y++){
+            Srtr1 = String.valueOf(charArraySr1[y]);
+//            System.out.println(Srtr);
+            if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")){
+            }};
+        if(Srtr1.equals("I")||Srtr1.equals("V")||Srtr1.equals("X")){
+ //           System.out.println("Первое римское");
+            opredelitel +=2;
+        }
+        else{
+ //           System.out.println("Первое арабское");
+            opredelitel +=1;
+        };
+
+        String first2 = strings[1];
+
+        char [] charArraySr2 = first2.toCharArray();
+        String Srtr2 = "";
+        for(int z = 0; z < charArraySr2.length;z++){
+            Srtr2 = String.valueOf(charArraySr2[z]);
+//            System.out.println(Srtr2);
+            if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")){
+            }};
+        if(Srtr2.equals("I")||Srtr2.equals("V")||Srtr2.equals("X")){
+ //           System.out.println("Второе римское");
+            opredelitel +=2;
+        }
+        else{
+ //           System.out.println("Второе арабское");
+            opredelitel +=1;
+        };
+        if (opredelitel == 3){
+            try {
+                throw new IOException(); // другой метод
+            } catch (IOException e) {
+                System.out.println("throws Exception //т.к. используются одновременно разные системы счисления");
+                System.exit(0);
+            }
+        };
+
+
+
+
+
+
+
+
         int bolshe = strings.length;
 //
 //        boolean a = true;
