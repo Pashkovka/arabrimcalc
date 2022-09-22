@@ -143,8 +143,36 @@ public class Calculator_v4 {
             char [] charArray = example.toCharArray();//записывает каждый элемент в массив
             Rimnum vvod1 = Rimnum.valueOf(strings[0]);
             int rim1 = vvod1.getNumber();
+
+            if(rim1 > 10){
+
+                try {
+                    throw new IOException(); // другой метод
+                } catch (IOException e) {
+                    System.out.println("throws Exception //т.к. Римское число более 10");
+                    System.exit(0);
+                }
+
+            };
+
             Rimnum vvod2 = Rimnum.valueOf(strings[1]);
+
+
             int rim2 = vvod2.getNumber();
+
+
+            if(rim2 > 10){
+
+                try {
+                    throw new IOException(); // другой метод
+                } catch (IOException e) {
+                    System.out.println("throws Exception //т.к. Римское число более 10");
+                    System.exit(0);
+                }
+
+            };
+
+
     //        Ciklversion.cikl(rim1,rim2,charArray);
          //   String stroka1 = String.valueOf(strings[0]);
          //   String stroka2 = String.valueOf(strings[1]);// и ниже преобразование string в int
@@ -180,7 +208,7 @@ if(num3 == 0||num3 < 0){
 }
             String [] Rimmassiv = {"I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XIII","XIX","XX","XXI","XXII","XXIII","XXIV","XXV","XXVI","XXVII","XXVIII","XXIX","XXX","XXXI","XXXII","XXXIII","XXXIV","XXXV","XXXVI","XXXVII","XXXVIII","XXXIX","XL","XLI","XLII","XLIII","XLIV","XLV","XLVI","XLVII","XLVIII","XLIX","L","LI","LII","LIII","LIV","LV","LVI","LVII","LVIII","LIX","LX","LXI","LXII","LXIII","LXIV","LXV","LXVI","LXVII","LXVIII","LXIX","LXX","LXXI","LXXII","LXXIII","LXXIV","LXXV","LXXVI","LXXVII","LXXVIII","LXXIX","LXXX","LXXXI","LXXXII","LXXXIII","LXXXIV","LXXXV","LXXXVI","LXXXVII","LXXXVIII","LXXXIX","XC","XCI","XCII","XCIII","XCIV","XCV","XCVI","XCVII","XCVIII","XCIX","C","CI"};//создаем массив с данными
             System.out.println("Ответ римский: "+Rimmassiv[num3-1]);
-        
+
 //            for (int i=0; i<=num3; i++){
 //                System.out.println(Rimmassiv[i]);
 //            }
